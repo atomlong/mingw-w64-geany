@@ -10,7 +10,7 @@
 
 _name=geany
 pkgname=mingw-w64-geany
-pkgver=1.33.0
+pkgver=1.37.1
 pkgrel=1
 pkgdesc='Fast and lightweight IDE (mingw-w64)'
 arch=('any')
@@ -19,8 +19,8 @@ license=('GPL')
 depends=('mingw-w64-crt' 'mingw-w64-gtk3')
 makedepends=('python-lxml' 'setconf' 'intltool' 'python' 'mingw-w64-gcc' 'mingw-w64-configure')
 optdepends=('mingw-w64-python')
-source=("https://download.geany.org/${_name}-${pkgver/.0}.tar.bz2")
-sha256sums=('66baaff43f12caebcf0efec9a5533044dc52837f799c73a1fd7312caa86099c2')
+source=(${_name}-${pkgver}.tar.gz::https://github.com/geany/geany/archive/${pkgver}.tar.gz)
+sha256sums=('17aee626c29f30ecfae034924e32a6c7f09cc651d3f80ccf7cd225ee0090a2ad')
 options=(!buildflags staticlibs !strip !emptydirs)
 
 _architectures="i686-w64-mingw32 x86_64-w64-mingw32"
