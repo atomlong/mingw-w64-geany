@@ -18,8 +18,7 @@ url='https://www.geany.org/'
 license=('GPL')
 depends=('mingw-w64-crt' 'mingw-w64-gtk3')
 makedepends=('python-lxml' 'setconf' 'intltool' 'python' 'mingw-w64-gcc' 'mingw-w64-configure')
-optdepends=('mingw-w64-geany-plugins: various extra features'
-            'mingw-w64-python')
+optdepends=('mingw-w64-python')
 source=("https://download.geany.org/${_name}-${pkgver/.0}.tar.bz2")
 sha256sums=('66baaff43f12caebcf0efec9a5533044dc52837f799c73a1fd7312caa86099c2')
 options=(!buildflags staticlibs !strip !emptydirs)

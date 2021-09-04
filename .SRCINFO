@@ -13,7 +13,6 @@ pkgbase = mingw-w64-geany
 	makedepends = mingw-w64-configure
 	depends = mingw-w64-crt
 	depends = mingw-w64-gtk3
-	optdepends = mingw-w64-geany-plugins: various extra features
 	optdepends = mingw-w64-python
 	options = !buildflags
 	options = staticlibs
@@ -23,4 +22,3 @@ pkgbase = mingw-w64-geany
 	sha256sums = 66baaff43f12caebcf0efec9a5533044dc52837f799c73a1fd7312caa86099c2
 
 pkgname = mingw-w64-geany
-
